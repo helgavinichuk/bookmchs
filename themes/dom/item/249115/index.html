@@ -1,0 +1,66 @@
+    <div id="ajax-art">
+        <div class="b-slider t-1">
+            <div class="bs-holder e-slider_popup">
+                                    <div class="bs-item">
+                        <article class="c-detail t-d1 t-d1a m_bm">
+                            <h2>«Не играй с огнём», бумага, гуашь,30x41, 2010</h2>
+                                                        <div class="b-line t-1 m_s"></div>
+                            <div class="b-list t-2 m_ts m_bm">
+<span class="bl-title">Поделиться:</span>
+
+<a class="bl-item button t-circ_vk" onclick="Share.vkontakte('../249115.html','Не играй с огнём')">
+    <i class="ico i_small_vk"></i>
+</a>
+
+<a class="bl-item button t-circ_ok" onclick="Share.odnoklassniki('../249115.html','Не играй с огнём')">
+    <i class="ico i_small_ok"></i>
+</a>
+
+<a class="bl-item button t-circ_fb" onclick="Share.facebook('../249115.html','Не играй с огнём')">
+    <i class="ico i_small_fb"></i>
+</a>
+
+<a class="bl-item button t-circ_tw" onclick="Share.twitter('../249115.html','Не играй с огнём')">
+    <i class="ico i_small_tw"></i>
+</a>
+
+<script>
+    Share = {
+        vkontakte: function (purl, ptitle) {
+            url = 'http://vkontakte.ru/share.php?';
+            url += 'url=' + encodeURIComponent(purl + '?social=vk&time=1633185911');
+            url += '&title=' + encodeURIComponent(ptitle);
+            url += '&noparse=true';
+            Share.popup(url);
+        },
+        odnoklassniki: function (purl, text) {
+            url = 'http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st.s=1';
+            url += '&st.comments=' + encodeURIComponent(text);
+            url += '&st._surl=' + encodeURIComponent(purl + '?social=ok&time=1633185911');
+            Share.popup(url);
+        },
+        facebook: function (purl, ptitle) {
+            url = 'http://www.facebook.com/sharer.php?s=100';
+            url += '&p[title]=' + encodeURIComponent(ptitle);
+            url += '&p[url]=' + encodeURIComponent(purl + '?social=fb&time=1633185911');
+            Share.popup(url);
+        },
+        twitter: function (purl, ptitle) {
+            url = 'http://twitter.com/share?';
+            url += 'text=' + encodeURIComponent(ptitle);
+            url += '&url=' + encodeURIComponent(purl + '');
+            url += '&counturl=' + encodeURIComponent(purl);
+            Share.popup(url);
+        },
+
+        popup: function (url) {
+            window.open(url, '', 'toolbar=0,status=0,width=626,height=436');
+        }
+    };
+</script></div>
+                        </article>
+                        <img src="../../../../upload/site1/document_images/rRr1U9XbNR.jpg" />
+                    </div>
+                            </div>
+        </div>
+    </div>
